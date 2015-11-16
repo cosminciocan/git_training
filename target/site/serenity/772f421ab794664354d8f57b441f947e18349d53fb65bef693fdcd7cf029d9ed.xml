@@ -1,0 +1,130 @@
+<acceptance-test-run title="Looking up multiple definitions" name="Looking up multiple definitions" description="" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="20169" timestamp="2015-11-16T11:05:47.750+02:00">
+  <user-story id="lookup-a-definition" name="Lookup a definition" path="consult_dictionary/LookupADefinition.feature"/>
+  <tags>
+    <tag name="Consult dictionary" type="capability"/>
+    <tag name="Consult dictionary/Lookup a definition" type="feature"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>name</header>
+      <header>definitions</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>apple</value>
+        <value>A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.</value>
+      </row>
+      <row result="SUCCESS">
+        <value>pear</value>
+        <value>An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {name=apple, definitions=A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="5a08132e5da91c09cb9da21be1d53f20_NONE.png"/>
+    </screenshots>
+    <test-group name="Given the user is on the Wikionary home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d13be34d88b70933aa19c679adb45274_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="3458">
+        <screenshots>
+          <screenshot image="d13be34d88b70933aa19c679adb45274_NONE.png"/>
+        </screenshots>
+        <description>Is the home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When the user looks up the definition of the word &apos;apple&apos;" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d13be34d88b70933aa19c679adb45274_NONE.png"/>
+      </screenshots>
+      <test-group name="Looks for: &lt;span class=&apos;step-parameter&apos;&gt;apple&lt;/span&gt;" result="SUCCESS">
+        <screenshots>
+          <screenshot image="d13be34d88b70933aa19c679adb45274_NONE.png"/>
+        </screenshots>
+        <test-step result="SUCCESS" duration="1098">
+          <screenshots>
+            <screenshot image="d13be34d88b70933aa19c679adb45274_NONE.png"/>
+            <screenshot image="bbd0066c5b0a7f7286dd669cd00cdf2b_NONE.png"/>
+          </screenshots>
+          <description>Enters: &lt;span class=&apos;step-parameter&apos;&gt;apple&lt;/span&gt;</description>
+        </test-step>
+        <test-step result="SUCCESS" duration="1669">
+          <screenshots>
+            <screenshot image="7b035914fd4fc2676ed652a154c363c2_NONE.png"/>
+            <screenshot image="5a08132e5da91c09cb9da21be1d53f20_NONE.png"/>
+          </screenshots>
+          <description>Starts search</description>
+        </test-step>
+      </test-group>
+    </test-group>
+    <test-group name="Then they should see the definition &apos;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&apos;" result="SUCCESS">
+      <screenshots>
+        <screenshot image="5a08132e5da91c09cb9da21be1d53f20_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1532">
+        <screenshots>
+          <screenshot image="5a08132e5da91c09cb9da21be1d53f20_NONE.png"/>
+        </screenshots>
+        <description>Should see definition: &lt;span class=&apos;step-parameter&apos;&gt;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[1] {name=pear, definitions=An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="acc722b1d1b2c32772a6c7590fcd96ba_NONE.png"/>
+    </screenshots>
+    <test-group name="Given the user is on the Wikionary home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d13be34d88b70933aa19c679adb45274_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="3534">
+        <screenshots>
+          <screenshot image="d13be34d88b70933aa19c679adb45274_NONE.png"/>
+        </screenshots>
+        <description>Is the home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When the user looks up the definition of the word &apos;pear&apos;" result="SUCCESS">
+      <screenshots>
+        <screenshot image="d13be34d88b70933aa19c679adb45274_NONE.png"/>
+        <screenshot image="acc722b1d1b2c32772a6c7590fcd96ba_NONE.png"/>
+      </screenshots>
+      <test-group name="Looks for: &lt;span class=&apos;step-parameter&apos;&gt;pear&lt;/span&gt;" result="SUCCESS">
+        <screenshots>
+          <screenshot image="d13be34d88b70933aa19c679adb45274_NONE.png"/>
+          <screenshot image="acc722b1d1b2c32772a6c7590fcd96ba_NONE.png"/>
+        </screenshots>
+        <test-step result="SUCCESS" duration="816">
+          <screenshots>
+            <screenshot image="d13be34d88b70933aa19c679adb45274_NONE.png"/>
+            <screenshot image="4cd625cc477ce50db66a95bb787a5578_NONE.png"/>
+          </screenshots>
+          <description>Enters: &lt;span class=&apos;step-parameter&apos;&gt;pear&lt;/span&gt;</description>
+        </test-step>
+        <test-step result="SUCCESS" duration="1620">
+          <screenshots>
+            <screenshot image="1ed299d882116a6246f9eb5dfaced13b_NONE.png"/>
+            <screenshot image="62d4b7a2dc7b85cd1fbe8d3d0264f0ef_NONE.png"/>
+          </screenshots>
+          <description>Starts search</description>
+        </test-step>
+      </test-group>
+    </test-group>
+    <test-group name="Then they should see the definition &apos;An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.&apos;" result="SUCCESS">
+      <screenshots>
+        <screenshot image="acc722b1d1b2c32772a6c7590fcd96ba_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="742">
+        <screenshots>
+          <screenshot image="acc722b1d1b2c32772a6c7590fcd96ba_NONE.png"/>
+        </screenshots>
+        <description>Should see definition: &lt;span class=&apos;step-parameter&apos;&gt;An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>
